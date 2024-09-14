@@ -1,0 +1,113 @@
+/* General styles for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #FDF3F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+/* Contact section */
+.Contact {
+    text-align: center;
+    background-color: #FDF3F1;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Headings */
+.Contact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #96BA7B;
+}
+
+.Contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #252B42;
+}
+
+.Contact p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #737373;
+}
+
+/* Form styles */
+.input-group {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+
+.input-group input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #96BA7B;
+    color: #FDF3F1;
+    border: 2px solid #96BA7B;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    background-color: #737373;
+    border-color: #737373;
+}
+
+/* Error styles */
+.input-group .form-control.error {
+    border-color:  #a01a10; /* Red border color on error */
+}
+
+.error-message {
+    color: #a01a10; /* Red color for error message */
+    font-size: 0.9rem; /* Adjust font size if needed */
+    margin-bottom: 10px; /* Space between input and error message */
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .Contact h1 {
+        font-size: 2rem;
+    }
+    
+    .Contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .Contact p {
+        font-size: 0.9rem;
+    }
+
+    .input-group input[type="email"] {
+        width: 60%;
+    }
+
+    .input-group button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}

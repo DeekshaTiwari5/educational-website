@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+    <div class="Contact">
+        <div class="text">
+            <h3>Newsletter</h3>
+            <h2>Watch our Courses</h2>
+
+            <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+           
+            <div class="input-group mb-3">
+                <input type="email" id="emailInput" class="form-control" placeholder="Your Email" aria-label="email" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+                <span id="error-message" class="error-message"></span>
+            </div>
+        </div>
+    </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const emailInput = document.getElementById('emailInput');
+        const subscribeButton = document.getElementById('button-addon2');
+        const errorMessage = document.getElementById('error-message');
+
+        subscribeButton.addEventListener('click', () => {
+            const emailValue = emailInput.value;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email regex pattern
+
+            if (!emailPattern.test(emailValue)) {
+                emailInput.classList.add('error'); // Add error class
+                errorMessage.textContent = '! Please enter a valid email address.';
+            } else {
+                emailInput.classList.remove('error'); // Remove error class
+                errorMessage.textContent = ''; // Clear error message if valid
+                // Add your form submission logic here
+                alert('Subscription successful!');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

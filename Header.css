@@ -1,0 +1,109 @@
+/* Header.css */
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    box-sizing: border-box;
+    /* width: 100%; 
+/* } 
+
+
+/* Header Styles */
+.header-section {
+    background-color: #fdf3f1;
+    color: #252b42;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+     /* width: 100%; */
+}
+
+/* Brandname Styles */
+.brandname {
+    font-size: 24px;
+    font-weight: bold;
+    /* width: 100%; */
+    margin-right: 700px;
+    /* margin-left: 50px; */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px; 
+    /* width: 100%; */
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #252b42;
+    font-size: 16px;
+    display: block;
+    padding: 5px 0;
+}
+ 
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #fdf3f1;
+    color: #96BA7B;
+} 
+
+.btn-secondary {
+    background-color: #96BA7B;
+    color: #ffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-section {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    .navbar {
+        width: 100%; /* Ensure navbar spans full width */
+        flex-direction: column; /* Stack navbar items vertically */
+        gap: 10px; /* Space between navbar items */
+    }
+    
+    .buttons {
+        flex-direction: row; /* Stack buttons vertically on small screens */
+        gap: 10px; /* Space between buttons */
+        width: 100%; /* Ensure buttons span full width */
+        align-items: flex-start; /* Align buttons to the start */
+    }
+     .brandname {
+        margin-right: 0; /* Reset margin for responsiveness */
+    }
+}

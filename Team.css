@@ -1,0 +1,141 @@
+/* Team.css */
+
+/* Body Styling */
+/* body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #ffff;
+    margin: 20px;
+    padding: 50px;
+} */
+.team-section{
+   background-color: #ffff;
+    width: 100vw;
+    /* display: flex; */
+    justify-content:left; 
+    /* border: 20px; */
+    /* align-items:center;  */
+    flex-direction: column;
+    padding: 20px;
+}
+.team{
+    /* display: flex; */
+    /* justify-content: left; */
+    margin: 70px;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color:#96BA7B;
+} 
+.topic{
+    margin: 80px;
+    /* padding: 50px; */
+    font-weight: 5rem;
+}
+.carousel slide{
+     margin: 80px;
+}
+ 
+/* Card Styling */
+.row{
+       display: flex;
+       /* margin: 20px;
+       padding: 50px; */
+    /* flex-direction:row; */
+}
+.card {
+    display: flex;
+    flex-direction:column;
+    margin: 10px auto;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 90%; /* Optional: Ensure the card takes full width */
+    max-width: 500px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    color: #252b42;
+    
+}
+
+.card img {
+    /* width: 150px; */
+      width: 100%; /* Image will take full width of the card */
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #252b42;
+}
+
+.card-text {
+    margin: 80px;
+    font-size: 1.5rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+/* Social Media Buttons */
+.btn-floating {
+    color: #96BA7B;
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.btn-floating::hover {
+    color: #252b42;
+}
+
+.btn-outline-primary,
+.btn-outline-danger,
+.btn-outline-info {
+    border-width: 2px;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-danger:hover,
+.btn-outline-info:hover {
+    color: #252b42;;
+}
+
+
+
+/* Mobile Responsive Layout */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column; /* Stack content vertically on small screens */
+    }
+
+    .card img {
+        width: 100%; /* Make image take full width */
+        border-radius: 8px 8px 0 0; /* Adjust border-radius for vertical layout */
+    }
+.col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .card-body {
+        text-align: center; /* Center the text for a better look on mobile */
+    }
+}
+@media (max-width: 576px) {
+    .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
